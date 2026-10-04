@@ -1,0 +1,14 @@
+{
+  "name": "employee-directory",
+  "version": "1.0.0",
+  "description": "A typed employee directory built with TypeScript",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "watch": "tsc --watch",
+    "serve": "npx serve ."
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}

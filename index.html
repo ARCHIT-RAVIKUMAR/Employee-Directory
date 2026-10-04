@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Staff directory</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <h1>Staff directory</h1>
+
+    <form class="filters" onsubmit="return false">
+      <input id="search" type="search" placeholder="Search…" aria-label="Search" autocomplete="off" />
+      <select id="field" aria-label="Search in">
+        <option value="all">in everything</option>
+        <option value="name">in names</option>
+        <option value="role">in roles</option>
+        <option value="department">in departments</option>
+        <option value="email">in emails</option>
+      </select>
+      <select id="department" aria-label="Department">
+        <option value="All">all departments</option>
+      </select>
+    </form>
+
+    <p id="count" role="status" aria-live="polite"></p>
+
+    <table>
+      <thead>
+        <tr><th>Name</th><th>Role</th><th>Department</th><th>Email</th></tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </main>
+  <script type="module" src="dist/main.js"></script>
+</body>
+</html>
